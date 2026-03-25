@@ -1,0 +1,64 @@
+{
+  "name": "masstxt",
+  "version": "2.0.0",
+  "description": "MassTxt — Bulk SMS via USB GSM Modem",
+  "author": "MassTxt",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --publish never",
+    "build-portable": "electron-builder --win portable --publish never"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.masstxt.app",
+    "productName": "MassTxt",
+    "copyright": "MassTxt Bulk SMS",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "MassTxt",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "uninstallDisplayName": "MassTxt Bulk SMS"
+    },
+    "portable": {
+      "artifactName": "MassTxt-Portable.exe"
+    }
+  }
+}
