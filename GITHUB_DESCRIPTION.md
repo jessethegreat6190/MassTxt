@@ -34,7 +34,7 @@ Bulk SMS from Windows via USB GSM modem or Android phone — no API costs, no in
 ### Downloads
 | File | Description |
 |------|-------------|
-| MassTxt Setup 2.1.0.exe | Windows installer (recommended) |
+| MassTxt.Setup.2.1.0.exe | Windows installer (recommended) |
 | MassTxt-Portable.exe | Portable — no installation needed |
 
 ### Requirements

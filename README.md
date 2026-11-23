@@ -37,7 +37,7 @@ Perfect for:
 - Added **Flash SMS (Class 0)** with a Compose toggle and configurable default
 - Added configurable **Flash SMS data coding** (`240` / `16`) in Settings
 - Fixed the send-confirmation bug that silently cancelled every send
-- Installer now ships as **MassTxt Setup 2.1.0.exe**
+- Installer now ships as **MassTxt.Setup.2.1.0.exe**
 
 ---
 
@@ -72,7 +72,7 @@ Both `240` (`0xF0`) and `16` (`0x10`) are standard DCS values for GSM 7-bit Clas
 
 ### Option 1 — Installer (Recommended)
 
-1. Download `MassTxt Setup 2.1.0.exe` from the [Releases](../../releases) page
+1. Download `MassTxt.Setup.2.1.0.exe` from the [Releases](../../releases) page
 2. Run the installer
 3. Open MassTxt from the desktop shortcut
 
