@@ -1,6 +1,8 @@
-# MassTxt — Bulk SMS via USB GSM Modem / Android
+# MassTxt v2.1.0 — Bulk SMS via USB GSM Modem / Android
 
 > Send bulk SMS from Windows using a USB GSM modem or an Android phone — no gateway, no monthly fees, no internet required. Includes Flash SMS (Class 0).
+
+**Current version:** 2.1.0
 
 ---
 
@@ -9,6 +11,7 @@
 MassTxt is an offline Windows desktop app built with Electron. It sends SMS directly through a **USB GSM modem** using AT commands, with an **ADB/Android phone** path as well. Contacts, groups, templates, schedules, and message history are stored locally in IndexedDB — nothing is uploaded to a third-party service.
 
 Perfect for:
+
 - Churches sending service announcements
 - Small businesses sending promotions and reminders
 - Community groups sending event alerts
@@ -29,7 +32,16 @@ Perfect for:
 - **Runs offline** — no internet connection needed
 - **Installer and portable EXE** builds
 
-### Flash SMS
+### What's new in 2.1.0
+
+- Added **Flash SMS (Class 0)** with a Compose toggle and configurable default
+- Added configurable **Flash SMS data coding** (`240` / `16`) in Settings
+- Fixed the send-confirmation bug that silently cancelled every send
+- Installer now ships as **MassTxt Setup 2.1.0.exe**
+
+---
+
+## Flash SMS
 
 Enable **⚡ Flash SMS** on the Compose page (or make it the default in **Settings → Message defaults**) to send a Class 0 SMS. It is displayed immediately on the recipient's phone and is not saved to their inbox.
 
@@ -59,11 +71,13 @@ Both `240` (`0xF0`) and `16` (`0x10`) are standard DCS values for GSM 7-bit Clas
 ## Quick Start
 
 ### Option 1 — Installer (Recommended)
-1. Download `MassTxt Setup 2.0.0.exe` from the [Releases](../../releases) page
+
+1. Download `MassTxt Setup 2.1.0.exe` from the [Releases](../../releases) page
 2. Run the installer
 3. Open MassTxt from the desktop shortcut
 
 ### Option 2 — Portable
+
 1. Download `MassTxt-Portable.exe` from [Releases](../../releases)
 2. Double-click to run — no installation needed
 
@@ -134,14 +148,17 @@ The GSM modem path uses `AT+CSMP` to set message class, then `AT+CMGS` to submit
 ## Troubleshooting
 
 **No device detected**
+
 - Plug in the modem/phone and reopen the Devices page
 - For Android, confirm USB Debugging is enabled and authorized
 
 **Flash SMS arrives as a normal SMS**
+
 - In Settings, change **Flash SMS data coding** from `240` to `16`
 - Some carriers and handsets (notably many iPhones/US carriers) ignore Class 0 messages
 
 **SMS not sending**
+
 - Check SIM signal and airplane mode
 - Try a different USB port or data cable
 
