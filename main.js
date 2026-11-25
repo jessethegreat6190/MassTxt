@@ -7,6 +7,12 @@ const fs     = require('fs');
 if (app && app.commandLine) {
   app.commandLine.appendSwitch('enable-features', 'WebSerial');
   app.commandLine.appendSwitch('enable-experimental-web-platform-features');
+  // Expose the renderer to Windows UI Automation / screen readers so controls
+  // such as the Dial Pad nav item are visible to accessibility clients.
+  // "complete" locks the full accessibility mode for the whole session.
+  app.commandLine.appendSwitch('force-renderer-accessibility', 'complete');
+  // Keep the legacy MSAA -> UIA bridge on Chromium 122 (Electron 29).
+  app.commandLine.appendSwitch('disable-features', 'UiaProvider');
 }
 
 let win;
@@ -138,6 +144,29 @@ async function readAndroidSMS(deviceId) {
   return messages.slice(0, 100);
 }
 
+// ── Validate USSD code ─────────────────────────────────────────
+// Only digits, star and hash are valid in a USSD string. The limit keeps
+// the ADB shell argument small and prevents accidental dial commands.
+function validUssdCode(code) {
+  return typeof code === 'string' && /^[0-9*#]{1,32}$/.test(code.trim());
+}
+
+// ── Open Android dialer with USSD code ─────────────────────────
+// Android does not allow apps to reliably submit USSD responses through the
+// public API. Opening the dialer prefill is the safe, dependency-free path;
+// the user confirms by pressing the call button on the phone.
+async function openAndroidDialer(deviceId, code) {
+  if (!validUssdCode(code)) throw new Error('Invalid USSD code. Use only digits, * and #.');
+  const cleanCode = code.trim();
+  const safeId = deviceId ? String(deviceId).replace(/[^A-Za-z0-9_.:-]/g, '') : '';
+  if (deviceId && !safeId) throw new Error('Invalid Android device');
+  const uri = 'tel:' + encodeURIComponent(cleanCode); // *100# -> tel:*100%23
+  const cmd = `am start -a android.intent.action.DIAL -d "${uri}"`;
+  const args = safeId ? ['-s', safeId, 'shell', cmd] : ['shell', cmd];
+  await runAdb(args, 15000);
+  return { success: true, method: 'dialer', code: cleanCode, uri };
+}
+
 // ── IPC Handlers ──────────────────────────────────────────────
 function registerIPC() {
 
@@ -179,6 +208,13 @@ function registerIPC() {
       const devices = await getAndroidDevices();
       return { success: true, devices };
     } catch(e) { return { success: false, error: e.message, devices: [] }; }
+  });
+
+  ipcMain.handle('android:open-dialer', async (e, { deviceId, code }) => {
+    try {
+      const result = await openAndroidDialer(deviceId, code);
+      return { success: true, ...result };
+    } catch(e) { return { success: false, error: e.message }; }
   });
 
   ipcMain.handle('android:send-sms', async (e, { deviceId, phone, message }) => {

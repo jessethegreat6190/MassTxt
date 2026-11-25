@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MassTxt v2.1</title>
+<title>MassTxt v2.2</title>
 <!-- Bootstrap 5 -->
 <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 <!-- MassTxt brand styles -->
@@ -24,51 +24,55 @@
           <path d="M7 15l-2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
       </div>
-      <div><div class="brand-name">MassTxt</div><div class="brand-sub">Bulk SMS v2.1</div></div>
+      <div><div class="brand-name">MassTxt</div><div class="brand-sub">Bulk SMS v2.2</div></div>
     </div>
     <nav class="nav">
-      <a class="nav-item active" data-page="dashboard">
+      <a class="nav-item active" role="button" tabindex="0" data-page="dashboard">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="9" y="1" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="1" y="9" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="9" y="9" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.4"/></svg>
         Dashboard
       </a>
-      <a class="nav-item" data-page="compose">
+      <a class="nav-item" role="button" tabindex="0" data-page="compose">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 3a1 1 0 011-1h10a1 1 0 011 1v7a1 1 0 01-1 1H5l-3 3V3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
         Compose
       </a>
-      <a class="nav-item" data-page="inbox">
+      <a class="nav-item" role="button" tabindex="0" data-page="inbox">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 10l4-7h6l4 7v3a1 1 0 01-1 1H2a1 1 0 01-1-1v-3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M1 10h4l1.5 2h3L11 10h4" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
         Inbox
         <span class="nav-badge" id="nav-badge-inbox" style="display:none">0</span>
       </a>
-      <a class="nav-item" data-page="templates">
+      <a class="nav-item" role="button" tabindex="0" data-page="templates">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M5 5h6M5 8h6M5 11h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         Templates
       </a>
       <div class="nav-section-label">Contacts</div>
-      <a class="nav-item" data-page="contacts">
+      <a class="nav-item" role="button" tabindex="0" data-page="contacts">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.4"/><path d="M2 14c0-3.314 2.686-5 6-5s6 1.686 6 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         Contacts
       </a>
-      <a class="nav-item" data-page="groups">
+      <a class="nav-item" role="button" tabindex="0" data-page="groups">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="5" cy="5" r="2.5" stroke="currentColor" stroke-width="1.4"/><circle cx="11" cy="5" r="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M1 14c0-2.761 1.79-4 4-4M15 14c0-2.761-1.79-4-4-4M8 10c2.21 0 4 1.239 4 4H4c0-2.761 1.79-4 4-4z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         Groups
       </a>
       <div class="nav-section-label">History</div>
-      <a class="nav-item" data-page="logs">
+      <a class="nav-item" role="button" tabindex="0" data-page="logs">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="1" width="12" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M5 5h6M5 8h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         Message Logs
         <span class="nav-badge" id="nav-badge-logs" style="display:none">0</span>
       </a>
-      <a class="nav-item" data-page="scheduled">
+      <a class="nav-item" role="button" tabindex="0" data-page="scheduled">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.4"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Scheduled
         <span class="nav-badge nav-badge-amber" id="nav-badge-sched" style="display:none">0</span>
       </a>
-      <a class="nav-item" data-page="devices">
+      <a class="nav-item" role="button" tabindex="0" data-page="devices">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="4" width="10" height="8" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="11" y="6" width="4" height="5" rx="1" stroke="currentColor" stroke-width="1.4"/></svg>
         Devices
       </a>
-      <a class="nav-item" data-page="settings">
+      <a class="nav-item" role="button" tabindex="0" aria-label="Dial Pad" data-page="dialpad">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="5" y="1" width="6" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><circle cx="8" cy="4" r="1" fill="currentColor"/><circle cx="8" cy="8" r="1" fill="currentColor"/><circle cx="8" cy="12" r="1" fill="currentColor"/></svg>
+        Dial Pad
+      </a>
+      <a class="nav-item" role="button" tabindex="0" data-page="settings">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2.5" stroke="currentColor" stroke-width="1.4"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.41 1.41M11.54 11.54l1.41 1.41M3.05 12.95l1.41-1.41M11.54 4.46l1.41-1.41" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
         Settings
       </a>
@@ -95,6 +99,7 @@
     <div id="page-logs"       class="page" style="display:none"></div>
     <div id="page-scheduled"  class="page" style="display:none"></div>
     <div id="page-devices"    class="page" style="display:none"></div>
+    <div id="page-dialpad"    class="page" style="display:none"></div>
     <div id="page-settings"   class="page" style="display:none"></div>
   </main>
 </div>
@@ -116,7 +121,7 @@
 
 <script>
 // ════════════════════════════════════════════════════════════
-//  MassTxt v2.1 — Standalone HTML Edition
+//  MassTxt v2.2 — Standalone HTML Edition
 //  Runs in Chrome/Edge with NO installation needed
 //  Uses: WebSerial API (modem) + IndexedDB (storage)
 // ════════════════════════════════════════════════════════════
@@ -204,7 +209,9 @@ const Settings = {
     if (!this._cache.msg_delay_ms)         { this._cache.msg_delay_ms = '800'; }
     if (!this._cache.retry_count)          { this._cache.retry_count = '2'; }
     if (!this._cache.default_sms_type)     { this._cache.default_sms_type = 'normal'; }
+    if (this._cache.default_long_sms === undefined) { this._cache.default_long_sms = '1'; }
     if (!this._cache.flash_dcs)            { this._cache.flash_dcs = '240'; }
+    if (!this._cache.ussd_codes)           { this._cache.ussd_codes = JSON.stringify(DEFAULT_USSD_CODES); }
     return this._cache;
   },
   get(key) { return this._cache[key]; },
@@ -283,6 +290,13 @@ const Modem = {
 
   _handleLine(line) {
     if (!line) return;
+    // Network delivery report (+CDS). The second numeric field is the message
+    // reference returned by +CMGS, so we can mark the exact recipient delivered.
+    if (line.startsWith('+CDS:')) {
+      const m = line.match(/\+CDS:\s*\d+\s*,\s*(\d+)/);
+      if (m && this.onDeliveryReport) this.onDeliveryReport(parseInt(m[1], 10), line);
+      return;
+    }
     if (line.startsWith('+CMT:')) {
       const m = line.match(/\+CMT:\s*"([^"]+)"/);
       this._incomingSmsFrom = m ? m[1] : 'Unknown';
@@ -339,7 +353,8 @@ const Modem = {
     await this.sendAT('ATE0');
     await this.sendAT('AT+CMGF=1');
     await this.sendAT('AT+CSCS="GSM"');
-    try { await this.sendAT('AT+CNMI=2,2,0,0,0'); } catch(e) {}
+    // mt=2 keeps incoming SMS with UDH; br=2 forwards delivery reports (+CDS).
+    try { await this.sendAT('AT+CNMI=2,2,0,2,0'); } catch(e) {}
     const csq = await this.sendAT('AT+CSQ');
     const m = csq.match(/\+CSQ:\s*(\d+)/);
     if (m) { const raw = parseInt(m[1]); this.signalStrength = raw === 99 ? 0 : Math.min(5, Math.round((raw/31)*5)); }
@@ -358,11 +373,13 @@ const Modem = {
       await this.sendAT(`AT+CMGS="${phone}"`, 4000);
       const promise = new Promise((res, rej) => {
         this._responseLines = [];
-        this._resolver = r => { if (r.includes('+CMGS:') || r.includes('OK')) res(true); else rej(new Error('Send failed: ' + r)); };
+        this._resolver = r => { if (r.includes('+CMGS:') || r.includes('OK')) res(r); else rej(new Error('Send failed: ' + r)); };
         this._atTimeout = setTimeout(() => { this._resolver = null; rej(new Error('SMS send timeout')); }, 30000);
       });
       await this.writer.write(message + '\x1A');
-      return await promise;
+      const raw = await promise;
+      const mrMatch = raw.match(/\+CMGS:\s*(\d+)/);
+      return { success: true, mr: mrMatch ? parseInt(mrMatch[1], 10) : null, raw };
     } finally {
       // Always restore normal (class 1 / stored) SMS for the next send.
       if (flash) { try { await this.sendAT('AT+CSMP=17,167,0,0'); } catch(e) {} }
@@ -373,6 +390,20 @@ const Modem = {
     if (!this.connected) return 0;
     try { const r = await this.sendAT('AT+CSQ'); const m = r.match(/\+CSQ:\s*(\d+)/); if (m) { const raw = parseInt(m[1]); this.signalStrength = raw === 99 ? 0 : Math.min(5, Math.round((raw/31)*5)); } } catch(e) {}
     return this.signalStrength;
+  },
+
+  // Dial a USSD code with AT+CUSD. The modem SIM must have a valid network
+  // connection; the network decides whether a bundle can be purchased.
+  async sendUSSD(code) {
+    if (!this.connected) throw new Error('Modem not connected');
+    const clean = String(code || '').trim();
+    if (!/^[0-9*#]{1,32}$/.test(clean)) throw new Error('Invalid USSD code. Use only digits, * and #.');
+    const raw = await this.sendAT(`AT+CUSD=1,"${clean}",15`, 25000);
+    if (/ERROR/i.test(raw)) return { success:false, raw, error:'Network or modem rejected the USSD code' };
+    const match = raw.match(/\+CUSD:\s*\d+\s*,\s*"((?:\\.|[^"])*)"/);
+    let message = match ? match[1].replace(/\\"/g, '"') : raw;
+    if (!message || /^\s*$/.test(message)) message = 'USSD request sent. Check the phone/network menu for the result.';
+    return { success:true, code:clean, raw, message };
   },
 
   async disconnect() {
@@ -419,19 +450,44 @@ async function executeBulkSend(messageId, onProgress) {
     }
 
     // Personalize
-    const body = msg.body
+    const personalized = msg.body
       .replace(/\{name\}/gi,  log.contact_name || log.phone)
       .replace(/\{first\}/gi, (log.contact_name || '').split(' ')[0] || log.phone)
       .replace(/\{phone\}/gi, log.phone);
 
-    let success = false, lastError = '';
-    for (let i = 0; i <= retryCount; i++) {
-      try { await Modem.sendSMS(log.phone, body, { flash: !!msg.is_flash }); success = true; break; }
-      catch(e) { lastError = e.message || String(e); if (i < retryCount) await sleep(1500); }
+    // Long SMS sends each 153-character part. Old messages (no is_long flag)
+    // keep the previous multi-part behaviour for backward compatibility.
+    const parts = msg.is_long === 0 ? [personalized] : splitSmsBody(personalized, 153);
+    const useAndroid = msg.device_info?.type === 'android' && !!window.electronAPI?.android?.sendSMS;
+    let partSent = 0, lastError = '';
+    for (let p = 0; p < parts.length; p++) {
+      let partOk = false;
+      for (let i = 0; i <= retryCount; i++) {
+        try {
+          let r;
+          if (useAndroid) {
+            r = await window.electronAPI.android.sendSMS({ deviceId: msg.device_info.androidDeviceId, phone: log.phone, message: parts[p] });
+            if (!r || r.success === false) throw new Error((r && r.error) || 'Android send failed');
+          } else {
+            r = await Modem.sendSMS(log.phone, parts[p], { flash: !!msg.is_flash });
+            if (r && r.mr) log.mr = r.mr;
+          }
+          partOk = true;
+          break;
+        } catch(e) {
+          lastError = e.message || String(e);
+          if (i < retryCount) await sleep(1500);
+        }
+      }
+      if (!partOk) { lastError = lastError || `Part ${p + 1} failed`; break; }
+      partSent++;
+      if (p < parts.length - 1) await sleep(300);
     }
 
-    if (success) { log.status = 'sent'; log.sent_at = new Date().toISOString(); sent++; }
-    else         { log.status = 'failed'; log.error_text = lastError; failed++; }
+    log.parts_sent  = partSent;
+    log.parts_total = parts.length;
+    if (partSent === parts.length) { log.status = 'sent'; log.sent_at = new Date().toISOString(); sent++; }
+    else                           { log.status = 'failed'; log.error_text = lastError; failed++; }
     await DB.put('message_logs', log);
 
     msg.sent_count    = sent;
@@ -533,7 +589,11 @@ function toast(msg, type = '') {
 
 // ── Bootstrap Modal ───────────────────────────────────────────
 let _bsModal = null;
+let _modalToken = 0;
+let _modalCleanupTimer = null;
 function showModal(html, onConfirm) {
+  clearTimeout(_modalCleanupTimer);
+  _modalToken++;
   const box = document.getElementById('modal-box');
   box.innerHTML = html;
   if (!_bsModal) _bsModal = new bootstrap.Modal(document.getElementById('app-modal'), { backdrop: true });
@@ -544,8 +604,22 @@ function showModal(html, onConfirm) {
   if (cancelBtn) cancelBtn.addEventListener('click', hideModal);
 }
 function hideModal() {
+  const token = ++_modalToken;
   if (_bsModal) _bsModal.hide();
-  setTimeout(() => { const box = document.getElementById('modal-box'); if (box) box.innerHTML = ''; }, 300);
+  clearTimeout(_modalCleanupTimer);
+  _modalCleanupTimer = setTimeout(() => {
+    if (token !== _modalToken) return;
+    const modal = document.getElementById('app-modal');
+    if (modal?.classList.contains('show')) return;
+    const box = document.getElementById('modal-box');
+    if (box) box.innerHTML = '';
+    // Bootstrap normally removes these, but rapid/programmatic close can leave
+    // a backdrop behind and block navigation. Clean up defensively.
+    document.querySelectorAll('.modal-backdrop').forEach(el => el.remove());
+    document.body.classList.remove('modal-open');
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+  }, 300);
 }
 function formatDate(str) {
   if (!str) return '—';
@@ -556,11 +630,32 @@ function formatDate(str) {
   if (diff < 172800) return 'Yesterday';
   return d.toLocaleDateString([], { month:'short', day:'numeric' });
 }
-function smsInfo(text) {
-  const len = text.length, parts = len === 0 ? 1 : len <= 160 ? 1 : Math.ceil(len/153);
-  return { len, parts, limit: parts === 1 ? 160 : parts * 153 };
+// GSM 7-bit text mode: 160 chars in a single SMS, 153 chars per part when
+// Long SMS is enabled (7 chars are reserved for the concatenation header).
+function splitSmsBody(text, max = 153) {
+  const str = String(text || '');
+  const parts = [];
+  for (let i = 0; i < str.length; i += max) parts.push(str.slice(i, i + max));
+  return parts.length ? parts : [''];
+}
+function smsInfo(text, allowLong = true) {
+  const len = String(text || '').length;
+  const parts = len === 0 ? 1 : len <= 160 ? 1 : allowLong ? Math.ceil(len / 153) : Math.ceil(len / 160);
+  const limit = allowLong ? (parts === 1 ? 160 : parts * 153) : 160;
+  return { len, parts, limit, remaining: limit - len, over: len > limit };
 }
 function escHtml(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+// Default Uganda MTN/Airtel USSD shortcuts. Editable in Settings.
+const DEFAULT_USSD_CODES = [
+  { id:'mtn-menu',      network:'MTN',    label:'MTN menu / balance', code:'*100#' },
+  { id:'mtn-sms',       network:'MTN',    label:'MTN SMS bundles',    code:'*160#' },
+  { id:'mtn-sms-100',   network:'MTN',    label:'MTN 100 SMS daily',  code:'*160*2*4#' },
+  { id:'airtel-menu',   network:'Airtel', label:'Airtel menu/balance', code:'*100#' },
+  { id:'airtel-sms',    network:'Airtel', label:'Airtel SMS bundles', code:'*180#' },
+  { id:'airtel-sms-100',network:'Airtel', label:'Airtel 100 SMS daily',code:'*180*1*1#' },
+];
+
 function setSignal(level) { document.querySelectorAll('.bar').forEach(b => b.classList.toggle('active', parseInt(b.dataset.level) <= level)); }
 function setNavBadge(id, count) {
   const el = document.getElementById('nav-badge-' + id);
@@ -578,6 +673,7 @@ window.api = {
     disconnect: async ()=> { await Modem.disconnect(); return { success: true }; },
     listPorts: async ()=> Modem.listPorts(),
     readSimContacts: async () => { try { await Modem.sendAT('AT+CPBS="SM"'); const r = await Modem.sendAT('AT+CPBR=?'); const m = r.match(/\+CPBR:\s*\((\d+)-(\d+)\)/); if (!m) return { success: true, contacts: [] }; const res = await Modem.sendAT(`AT+CPBR=${m[1]},${m[2]}`, 15000); const contacts = []; res.split('\n').forEach(l => { const x = l.match(/\+CPBR:\s*\d+,"([^"]+)",\d+,"([^"]*)"/); if (x) contacts.push({ phone: x[1], name: x[2]||'SIM Contact' }); }); return { success: true, contacts }; } catch(e) { return { success: false, error: e.message }; } },
+    ussd: async (code) => { try { return await Modem.sendUSSD(code); } catch(e) { return { success:false, error:e.message }; } },
     onStatus: fn => { Modem.onStatusChange = fn; },
     onSignal: fn => {},
   },
@@ -608,11 +704,15 @@ window.api = {
     delete: async ({name}) => { const all=await DB.getAll('contacts'); for(const c of all.filter(x=>x.group_name===name))await DB.put('contacts',{...c,group_name:'General'}); const groups=await DB.getAll('groups'); const g=groups.find(x=>x.name===name); if(g)await DB.delete('groups',g.id); return{success:true}; },
   },
   messages: {
-    send: async ({senderID,body,recipients,scheduledAt,deviceInfo,flash}) => {
-      if(!Modem.connected&&!scheduledAt)return{success:false,error:'Modem not connected'};
+    send: async ({senderID,body,recipients,scheduledAt,deviceInfo,flash,long}) => {
+      const useAndroid = deviceInfo?.type === 'android' && !!window.electronAPI?.android?.sendSMS;
+      if(!useAndroid && !Modem.connected && !scheduledAt)return{success:false,error:'Modem not connected'};
+      const text = String(body || '');
+      const allowLong = long !== false;
+      if(!allowLong && text.length > 160) return{success:false,error:'Message is longer than 160 characters. Enable Long SMS to send it.'};
       const phones=[]; for(const r of recipients){if(r.type==='group'){const all=await DB.getAll('contacts');all.filter(c=>c.group_name===r.value&&c.active).forEach(c=>phones.push({phone:c.phone,name:c.name}));}else phones.push({phone:r.value,name:r.label||r.value});}
       const deduped=[...new Map(phones.map(p=>[p.phone,p])).values()];
-      const msg=await DB.add('messages',{sender_id:senderID,body,recipients_json:JSON.stringify(recipients),total_recipients:deduped.length,sent_count:0,failed_count:0,pending_count:deduped.length,status:scheduledAt?'scheduled':'pending',scheduled_at:scheduledAt||null,is_flash:flash?1:0,created_at:new Date().toISOString()});
+      const msg=await DB.add('messages',{sender_id:senderID,body:text,recipients_json:JSON.stringify(recipients),device_info:deviceInfo||null,total_recipients:deduped.length,sent_count:0,failed_count:0,delivered_count:0,pending_count:deduped.length,status:scheduledAt?'scheduled':'pending',scheduled_at:scheduledAt||null,is_flash:flash?1:0,is_long:allowLong?1:0,created_at:new Date().toISOString()});
       for(const p of deduped)await DB.add('message_logs',{message_id:msg.id,phone:p.phone,contact_name:p.name||null,status:'pending'});
       if(!scheduledAt){
         executeBulkSend(msg.id, data=>{
@@ -621,14 +721,53 @@ window.api = {
       }
       return{success:true,messageId:msg.id,total:deduped.length};
     },
-    sendSample: async ({phone,body,flash}) => { try{const b=body.replace(/\{name\}/gi,'Test Contact').replace(/\{first\}/gi,'Test').replace(/\{phone\}/gi,phone); await Modem.sendSMS(phone,b,{flash:!!flash}); return{success:true};}catch(e){return{success:false,error:e.message};} },
+    sendSample: async ({phone,body,flash,long,deviceInfo}) => { try{const b=body.replace(/\{name\}/gi,'Test Contact').replace(/\{first\}/gi,'Test').replace(/\{phone\}/gi,phone); const parts=long===false?[b]:splitSmsBody(b,153); for(const part of parts){ if(deviceInfo?.type==='android'&&window.electronAPI?.android?.sendSMS){const r=await window.electronAPI.android.sendSMS({deviceId:deviceInfo.androidDeviceId,phone,message:part}); if(!r||r.success===false)throw new Error(r?.error||'Android send failed');}else await Modem.sendSMS(phone,part,{flash:!!flash}); } return{success:true,parts:parts.length};}catch(e){return{success:false,error:e.message};} },
     list: async ({limit=100}={}) => { const all=await DB.getAll('messages'); return all.sort((a,b)=>b.id-a.id).slice(0,limit); },
     logs: async ({messageId}) => { const all=await DB.getAll('message_logs'); return all.filter(l=>l.message_id===messageId); },
     exportLogs: async logs => { downloadCSV('message_logs.csv',logs,['contact_name','phone','status','error_text','sent_at']); return{success:true}; },
-    statsToday: async () => { const all=await DB.getAll('message_logs'); const today=new Date().toDateString(); const t=all.filter(l=>l.sent_at&&new Date(l.sent_at).toDateString()===today); return{sent:t.filter(l=>l.status==='sent').length,failed:t.filter(l=>l.status==='failed').length,pending:t.filter(l=>l.status==='pending').length}; },
+    statsToday: async () => { const all=await DB.getAll('message_logs'); const today=new Date().toDateString(); const t=all.filter(l=>(l.sent_at||l.delivered_at)&&new Date(l.sent_at||l.delivered_at).toDateString()===today); return{sent:t.filter(l=>l.status==='sent'||l.status==='delivered').length,failed:t.filter(l=>l.status==='failed').length,delivered:t.filter(l=>l.status==='delivered').length,pending:t.filter(l=>l.status==='pending').length}; },
+    accountability: async () => {
+      const logs = (await DB.getAll('message_logs')).sort((a,b) => (b.sent_at||b.delivered_at||b.created_at||'').localeCompare(a.sent_at||a.delivered_at||a.created_at||''));
+      const messages = await DB.getAll('messages');
+      const byId = new Map(messages.map(m => [m.id, m]));
+      const enrich = l => ({ ...l, body: byId.get(l.message_id)?.body || '', is_flash: byId.get(l.message_id)?.is_flash || 0 });
+      const sentLogs = logs.filter(l => l.status === 'sent' || l.status === 'delivered');
+      const failedLogs = logs.filter(l => l.status === 'failed');
+      const deliveredLogs = logs.filter(l => l.status === 'delivered');
+      return {
+        all: logs.length,
+        sent: sentLogs.length,
+        failed: failedLogs.length,
+        delivered: deliveredLogs.length,
+        pending: logs.filter(l => l.status === 'pending').length,
+        sentLogs: sentLogs.map(enrich),
+        failedLogs: failedLogs.map(enrich),
+        deliveredLogs: deliveredLogs.map(enrich),
+        allLogs: logs.map(enrich),
+      };
+    },
     retryFailed: async ({messageId}) => { const logs=await DB.getAll('message_logs'); const failed=logs.filter(l=>l.message_id===messageId&&l.status==='failed'); for(const l of failed){l.status='pending';l.error_text=null;await DB.put('message_logs',l);} const msg=await DB.get('messages',messageId); if(msg){msg.status='pending';msg.failed_count=0;await DB.put('messages',msg);executeBulkSend(messageId,d=>{if(window._onSendProgress)window._onSendProgress(d);});} return{success:true,retrying:failed.length}; },
     delete: async ({messageId}) => { const logs=await DB.getAll('message_logs'); for(const l of logs.filter(x=>x.message_id===messageId))await DB.delete('message_logs',l.id); await DB.delete('messages',messageId); return{success:true}; },
-    deliveryReport: async ({messageId}) => { const msg=await DB.get('messages',messageId); const logs=(await DB.getAll('message_logs')).filter(l=>l.message_id===messageId); const byStatus={}; logs.forEach(l=>{byStatus[l.status]=(byStatus[l.status]||0)+1;}); const rate=msg&&msg.total_recipients>0?Math.round((msg.sent_count/msg.total_recipients)*100):0; return{msg,logs,byStatus,deliveryRate:rate}; },
+    deliveryReport: async ({messageId}) => { const msg=await DB.get('messages',messageId); const logs=(await DB.getAll('message_logs')).filter(l=>l.message_id===messageId); const byStatus={}; logs.forEach(l=>{byStatus[l.status]=(byStatus[l.status]||0)+1;}); const rate=msg&&msg.total_recipients>0?Math.round((((byStatus.sent||0)+(byStatus.delivered||0))/msg.total_recipients)*100):0; return{msg,logs,byStatus,deliveryRate:rate}; },
+    onDeliveryReport: fn => {
+      Modem.onDeliveryReport = async (mr, raw) => {
+        try {
+          const logs = await DB.getAll('message_logs');
+          const log = logs.find(l => Number(l.mr) === Number(mr));
+          if (!log || log.status === 'delivered') return;
+          log.status = 'delivered';
+          log.delivered_at = new Date().toISOString();
+          log.delivery_status = raw;
+          await DB.put('message_logs', log);
+          const msg = await DB.get('messages', log.message_id);
+          if (msg) {
+            msg.delivered_count = (await DB.getAll('message_logs')).filter(x => x.message_id === msg.id && x.status === 'delivered').length;
+            await DB.put('messages', msg);
+          }
+          if (fn) fn({ messageId: log.message_id, log });
+        } catch(e) {}
+      };
+    },
     onProgress: fn => { window._onSendProgress = fn; },
   },
   queue: {
@@ -662,6 +801,7 @@ window.api = {
     readContacts:   async (a) => window.electronAPI ? window.electronAPI.android.readContacts(a)  : { success:false, error:'ADB not available' },
     readSMS:        async (a) => window.electronAPI ? window.electronAPI.android.readSMS(a)       : { success:false, error:'ADB not available' },
     sendSMS:        async (a) => window.electronAPI ? window.electronAPI.android.sendSMS(a)       : { success:false, error:'ADB not available' },
+    openDialer:     async (a) => window.electronAPI ? window.electronAPI.android.openDialer(a)    : { success:false, error:'ADB not available' },
   },
   devices: {
     listAll: async () => {
@@ -688,7 +828,7 @@ window.api = {
       const todayLogs=logs.filter(l=>l.sent_at&&new Date(l.sent_at).toDateString()===today);
       const week=[]; for(let i=6;i>=0;i--){const d=new Date();d.setDate(d.getDate()-i);const ds=d.toDateString();const dl=logs.filter(l=>l.sent_at&&new Date(l.sent_at).toDateString()===ds);week.push({day:d.toISOString().split('T')[0],sent:dl.filter(l=>l.status==='sent').length,failed:dl.filter(l=>l.status==='failed').length});}
       const recentLogs=logs.sort((a,b)=>b.id-a.id).slice(0,8).map(l=>{const m=messages.find(x=>x.id===l.message_id);return{...l,body:m?.body||''};});
-      return{today:{sent:todayLogs.filter(l=>l.status==='sent').length,failed:todayLogs.filter(l=>l.status==='failed').length,pending:todayLogs.filter(l=>l.status==='pending').length},total_contacts:contacts.filter(c=>c.active).length,total_messages:logs.filter(l=>l.status==='sent').length,unread_inbox:inbox.filter(m=>!m.read_flag).length,scheduled:messages.filter(m=>m.status==='scheduled').length,week,recent_logs:recentLogs};
+      return{today:{sent:todayLogs.filter(l=>l.status==='sent'||l.status==='delivered').length,failed:todayLogs.filter(l=>l.status==='failed').length,delivered:todayLogs.filter(l=>l.status==='delivered').length,pending:todayLogs.filter(l=>l.status==='pending').length},total_contacts:contacts.filter(c=>c.active).length,total_messages:logs.filter(l=>l.status==='sent'||l.status==='delivered').length,delivered:logs.filter(l=>l.status==='delivered').length,unread_inbox:inbox.filter(m=>!m.read_flag).length,scheduled:messages.filter(m=>m.status==='scheduled').length,week,recent_logs:recentLogs};
     }
   },
   db: {
@@ -703,7 +843,7 @@ window.api = {
     },
     openFolder: async () => { toast('Data is stored in browser IndexedDB. Use Backup to save a file.'); return{success:true}; },
   },
-  app: { info: async () => ({ version:'2.1.0 (Browser)', platform:'Browser/WebSerial', arch:'', nodeVersion:'', electronVersion:'' }) },
+  app: { info: async () => ({ version:'2.2.0 (Browser)', platform:'Browser/WebSerial', arch:'', nodeVersion:'', electronVersion:'' }) },
   onNavTo: fn => {},
 };
 
@@ -784,10 +924,11 @@ const dashboardPage = {
     const maxVal = Math.max(...days.map(d => d.sent + d.failed), 1);
 
     el.innerHTML = `
-      <div class="stat-grid" style="grid-template-columns:repeat(5,1fr)">
+      <div class="stat-grid" style="grid-template-columns:repeat(6,1fr)">
         <div class="stat-card"><div class="stat-val">${s.total_contacts}</div><div class="stat-lbl">Total contacts</div></div>
         <div class="stat-card"><div class="stat-val green">${s.today?.sent || 0}</div><div class="stat-lbl">Sent today</div></div>
         <div class="stat-card"><div class="stat-val red">${s.today?.failed || 0}</div><div class="stat-lbl">Failed today</div></div>
+        <div class="stat-card"><div class="stat-val teal">${s.today?.delivered || 0}</div><div class="stat-lbl">Delivered today</div></div>
         <div class="stat-card"><div class="stat-val amber">${s.scheduled}</div><div class="stat-lbl">Scheduled</div></div>
         <div class="stat-card" style="cursor:pointer" onclick="pagesRouter.load('inbox')">
           <div class="stat-val" style="${s.unread_inbox > 0 ? 'color:var(--blue)' : ''}">${s.unread_inbox}</div>
@@ -826,12 +967,12 @@ const dashboardPage = {
             </div>
             ${s.recent_logs.length ? s.recent_logs.map(l => `
               <div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)">
-                <div class="log-dot ${l.status === 'sent' ? 'sent' : l.status === 'failed' ? 'failed' : 'pending'}"></div>
+                <div class="log-dot ${l.status === 'sent' || l.status === 'delivered' ? 'sent' : l.status === 'failed' ? 'failed' : 'pending'}"></div>
                 <div style="flex:1;min-width:0">
                   <div style="font-size:12px;font-weight:500">${escHtml(l.contact_name || l.phone)}</div>
                   <div style="font-size:11px;color:var(--text-3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escHtml(l.body)}</div>
                 </div>
-                <span class="badge ${l.status === 'sent' ? 'badge-green' : l.status === 'failed' ? 'badge-red' : 'badge-amber'}" style="font-size:10px">${l.status}</span>
+                <span class="badge ${l.status === 'delivered' ? 'badge-green' : l.status === 'sent' ? 'badge-teal' : l.status === 'failed' ? 'badge-red' : 'badge-amber'}" style="font-size:10px">${l.status}</span>
               </div>`).join('') : '<div style="font-size:13px;color:var(--text-3);text-align:center;padding:20px 0">No messages yet</div>'}
           </div>
         </div>
@@ -948,14 +1089,21 @@ const composePage = {
             </div>
 
             <div class="form-group">
-              <label class="form-label" style="display:flex;align-items:center;justify-content:space-between">
-                Message type
-                <label style="display:flex;align-items:center;gap:6px;cursor:pointer;font-weight:400">
-                  <input type="checkbox" id="flash-sms" onchange="composePage.toggleFlash()"> ⚡ Flash SMS
+              <label class="form-label">Message options</label>
+              <div class="message-options">
+                <label class="message-option" title="Send messages longer than 160 characters as multiple SMS parts">
+                  <input type="checkbox" id="long-sms" checked onchange="composePage.updateChar()">
+                  <span>Long SMS</span>
+                  <small>Split text over 160 characters into SMS parts</small>
                 </label>
-              </label>
-              <div id="flash-hint" style="font-size:11px;color:var(--text-3);line-height:1.5">
-                Normal SMS is saved in the recipient's inbox. Tick <strong>Flash SMS</strong> to make it appear directly on their screen instead.
+                <label class="message-option flash" title="Class 0 / FLASH SMS — appears directly on the recipient's screen">
+                  <input type="checkbox" id="flash-sms" onchange="composePage.toggleFlash()">
+                  <span>⚡ Flash on screen</span>
+                  <small>FLASH SMS — shown immediately, not saved</small>
+                </label>
+              </div>
+              <div id="flash-hint" style="font-size:11px;color:var(--text-3);line-height:1.5;margin-top:7px">
+                Normal SMS is saved in the recipient's inbox. Tick <strong>FLASH SMS</strong> to make it appear directly on their screen instead.
               </div>
             </div>
 
@@ -966,9 +1114,10 @@ const composePage = {
                   Use <code style="background:var(--bg-active);padding:1px 4px;border-radius:3px">{name}</code>
                   <code style="background:var(--bg-active);padding:1px 4px;border-radius:3px">{first}</code>
                   <code style="background:var(--bg-active);padding:1px 4px;border-radius:3px">{phone}</code> for personalization
+                  · <strong>Enter</strong> adds a new line
                 </span>
               </label>
-              <textarea class="form-input" id="msg-body" placeholder="Type your message here..." oninput="composePage.updateChar()"></textarea>
+              <textarea class="form-input" id="msg-body" placeholder="Type your message here..." onkeydown="composePage.handleBodyKey(event)" oninput="composePage.updateChar()"></textarea>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px">
                 <div class="char-info" id="char-info">0 / 160 — 1 SMS part</div>
                 <button class="btn btn-sm" onclick="composePage.sendTestSMS()" style="font-size:11px">Send test SMS</button>
@@ -1044,6 +1193,8 @@ const composePage = {
     document.getElementById('sender-id').value = settings.sender_id || '';
     const flashEl = document.getElementById('flash-sms');
     if (flashEl) flashEl.checked = settings.default_sms_type === 'flash';
+    const longEl = document.getElementById('long-sms');
+    if (longEl) longEl.checked = settings.default_long_sms !== '0';
 
     this.recipients = [];
     this.toggleFlash();
@@ -1055,13 +1206,31 @@ const composePage = {
     return !!document.getElementById('flash-sms')?.checked;
   },
 
+  isLong() {
+    const el = document.getElementById('long-sms');
+    return el ? !!el.checked : true;
+  },
+
+  // Explicit newline handling so Enter always adds a line to the SMS body
+  // instead of being swallowed by an Electron/global shortcut.
+  handleBodyKey(e) {
+    if (e.key !== 'Enter' || e.isComposing) return;
+    e.preventDefault();
+    const el = e.target;
+    const start = el.selectionStart ?? el.value.length;
+    const end   = el.selectionEnd ?? start;
+    el.value = el.value.slice(0, start) + '\n' + el.value.slice(end);
+    el.selectionStart = el.selectionEnd = start + 1;
+    this.updateChar();
+  },
+
   toggleFlash() {
     const on = this.isFlash();
     const hint = document.getElementById('flash-hint');
     if (hint) {
       hint.innerHTML = on
-        ? '<strong style="color:var(--amber-dark)">Flash SMS (class 0):</strong> appears on the recipient\'s screen immediately and is <strong>not</strong> saved in their inbox. Supported on GSM modems.'
-        : 'Normal SMS is saved in the recipient\'s inbox. Tick <strong>Flash SMS</strong> to make it appear directly on their screen instead.';
+        ? '<strong style="color:var(--amber-dark)">FLASH SMS (class 0):</strong> appears on the recipient\'s screen immediately and is <strong>not</strong> saved in their inbox. Supported on GSM modems.'
+        : 'Normal SMS is saved in the recipient\'s inbox. Tick <strong>FLASH SMS</strong> to make it appear directly on their screen instead.';
     }
     this.updateSummary();
   },
@@ -1094,11 +1263,11 @@ const composePage = {
 
   updateChar() {
     const body = document.getElementById('msg-body')?.value || '';
-    const info = smsInfo(body);
+    const info = smsInfo(body, this.isLong());
     const el = document.getElementById('char-info');
     if (el) {
       el.textContent = `${info.len} / ${info.limit} — ${info.parts} SMS part${info.parts > 1 ? 's' : ''}`;
-      el.className = 'char-info' + (info.len > 160 ? ' warn' : '') + (info.remaining < 0 ? ' over' : '');
+      el.className = 'char-info' + (info.len > 160 ? ' warn' : '') + (info.over ? ' over' : '');
     }
     const partsEl = document.getElementById('sum-parts');
     if (partsEl) partsEl.textContent = info.parts;
@@ -1154,9 +1323,11 @@ const composePage = {
 
     const typeEl = document.getElementById('sum-type');
     if (typeEl) {
-      typeEl.innerHTML = this.isFlash()
-        ? '<span class="badge badge-amber">⚡ Flash</span>'
-        : '<span class="badge badge-gray">Normal</span>';
+      const badges = [];
+      if (this.isFlash()) badges.push('<span class="badge badge-amber">⚡ Flash on screen</span>');
+      if (this.isLong())  badges.push('<span class="badge badge-blue">Long SMS</span>');
+      if (!badges.length) badges.push('<span class="badge badge-gray">Normal</span>');
+      typeEl.innerHTML = badges.join(' ');
     }
 
     const devEl = document.getElementById('sum-device');
@@ -1184,6 +1355,8 @@ const composePage = {
     if (st) { st.style.display = 'none'; st.value = ''; }
     const flashEl = document.getElementById('flash-sms');
     if (flashEl) flashEl.checked = Settings.get('default_sms_type') === 'flash';
+    const longEl = document.getElementById('long-sms');
+    if (longEl) longEl.checked = Settings.get('default_long_sms') !== '0';
     this.renderTags();
     this.toggleFlash();
     this.updateChar();
@@ -1214,7 +1387,7 @@ const composePage = {
     if (!phone) { toast('Enter a phone number', 'error'); return; }
     hideModal();
     const deviceInfo = this.selectedDevice ? { type: this.selectedDevice.type, androidDeviceId: this.selectedDevice.id } : { type: 'modem' };
-    const r = await window.api.messages.sendSample({ phone, body, flash: this.isFlash(), deviceInfo });
+    const r = await window.api.messages.sendSample({ phone, body, flash: this.isFlash(), long: this.isLong(), deviceInfo });
     if (r.success) toast(`Test SMS sent to ${phone}`, 'success');
     else toast(r.error || 'Test send failed', 'error');
   },
@@ -1247,10 +1420,12 @@ const composePage = {
     if (!this.selectedDevice && !scheduled) { toast('No sending device selected. Go to Devices page.', 'error'); return; }
 
     const total = this.recipients.reduce((s, r) => s + r.count, 0);
-    const parts = smsInfo(body).parts;
+    const flash = this.isFlash();
+    const long  = this.isLong();
+    if (!long && body.length > 160) { toast('Message is over 160 characters — enable Long SMS', 'error'); return; }
+    const parts = smsInfo(body, long).parts;
     const hasVars = /\{name\}|\{first\}|\{phone\}/i.test(body);
     const isScheduled = scheduled && scheduledAt;
-    const flash = this.isFlash();
     const deviceInfo = this.selectedDevice
       ? { type: this.selectedDevice.type, androidDeviceId: this.selectedDevice.id }
       : { type: 'modem' };
@@ -1263,7 +1438,7 @@ const composePage = {
           <tr><td style="color:var(--text-2);padding:4px 0">Recipients</td><td style="text-align:right;font-weight:500">${total}</td></tr>
           <tr><td style="color:var(--text-2);padding:4px 0">SMS parts each</td><td style="text-align:right;font-weight:500">${parts}</td></tr>
           <tr><td style="color:var(--text-2);padding:4px 0">Total messages</td><td style="text-align:right;font-weight:500">${total * parts}</td></tr>
-          <tr><td style="color:var(--text-2);padding:4px 0">Message type</td><td style="text-align:right"><span class="badge ${flash ? 'badge-amber' : 'badge-gray'}">${flash ? '⚡ Flash SMS' : 'Normal SMS'}</span></td></tr>
+          <tr><td style="color:var(--text-2);padding:4px 0">Message options</td><td style="text-align:right">${flash ? '<span class="badge badge-amber">⚡ Flash on screen</span> ' : ''}${long ? '<span class="badge badge-blue">Long SMS</span>' : (!flash ? '<span class="badge badge-gray">Normal SMS</span>' : '')}</td></tr>
           <tr><td style="color:var(--text-2);padding:4px 0">Device</td><td style="text-align:right"><span class="badge ${deviceInfo.type==='android'?'badge-green':'badge-blue'}">${escHtml(this.selectedDevice?.label || 'GSM Modem')}</span></td></tr>
           ${hasVars ? `<tr><td style="color:var(--text-2);padding:4px 0">Personalized</td><td style="text-align:right"><span class="badge badge-green">Yes — per contact</span></td></tr>` : ''}
           ${isScheduled ? `<tr><td style="color:var(--text-2);padding:4px 0">Scheduled for</td><td style="text-align:right;font-weight:500">${new Date(scheduledAt).toLocaleString()}</td></tr>` : ''}
@@ -1280,7 +1455,7 @@ const composePage = {
     const result = await window.api.messages.send({
       senderID, body, recipients: this.recipients,
       scheduledAt: isScheduled ? scheduledAt : null,
-      deviceInfo, flash,
+      deviceInfo, flash, long,
     });
 
     if (result.success) {
@@ -1312,7 +1487,7 @@ const contactsPage = {
             Import ▾
           </button>
           <button class="btn btn-sm" onclick="contactsPage.exportCSV()">Export CSV</button>
-          <button class="btn btn-amber btn-sm" onclick="contactsPage.runValidation()">
+          <button class="btn btn-amber btn-sm" onclick="contactsPage.runValidation(this)">
             <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.4l-3.7 2.1.7-4.1-3-2.9 4.2-.9z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
             Validate
           </button>
@@ -1480,13 +1655,23 @@ const contactsPage = {
     }).join('');
   },
 
-  async runValidation() {
-    const btn = event.currentTarget;
-    btn.textContent = 'Validating…';
-    btn.disabled = true;
-    const r = await window.api.contacts.validatePhones();
-    btn.disabled = false;
-    btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 3.6L14 5.5l-3 2.9.7 4.1L8 10.4l-3.7 2.1.7-4.1-3-2.9 4.2-.9z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg> Validate`;
+  async runValidation(button) {
+    const btn = button || (typeof event !== 'undefined' ? event.currentTarget : null)
+      || document.querySelector('[onclick*="runValidation"]');
+    const originalHtml = btn ? btn.innerHTML : null;
+    if (btn) {
+      btn.textContent = 'Validating…';
+      btn.disabled = true;
+    }
+    let r;
+    try {
+      r = await window.api.contacts.validatePhones();
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.innerHTML = originalHtml;
+      }
+    }
 
     const el = document.getElementById('validation-result');
     if (!el) return;
@@ -2136,6 +2321,8 @@ const groupsPage = {
 // ── Page: logs ──────────────────────────────────────────
 const logsPage = {
   messages: [],
+  accountabilityFilter: 'sent',
+  accountabilityData: null,
 
   async render() {
     const stats = await window.api.messages.statsToday();
@@ -2154,8 +2341,17 @@ const logsPage = {
         <div class="stat-grid">
           <div class="stat-card"><div class="stat-val teal">${stats?.sent || 0}</div><div class="stat-lbl">Sent today</div></div>
           <div class="stat-card"><div class="stat-val red">${stats?.failed || 0}</div><div class="stat-lbl">Failed today</div></div>
+          <div class="stat-card"><div class="stat-val green">${stats?.delivered || 0}</div><div class="stat-lbl">Delivered today</div></div>
           <div class="stat-card"><div class="stat-val amber">${stats?.pending || 0}</div><div class="stat-lbl">Pending</div></div>
         </div>
+        <div class="card accountability-card" style="margin-bottom:16px"><div class="card-body">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px">
+            <div class="card-title" style="margin:0">Accountability — all time</div>
+            <div style="font-size:11px;color:var(--text-3);text-align:right">Delivered = network confirmation (+CDS) where supported</div>
+          </div>
+          <div class="accountability-grid" id="accountability-grid"></div>
+          <div class="accountability-list" id="accountability-list"><div style="text-align:center;color:var(--text-3);padding:18px">Loading accountability…</div></div>
+        </div></div>
         <div class="card"><div class="card-body" id="logs-list">
           <div style="text-align:center;color:var(--text-3);padding:28px">Loading…</div>
         </div></div>
@@ -2176,6 +2372,7 @@ const logsPage = {
       el.innerHTML = `<div class="empty-state">
         <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M7 8h10M7 12h10M7 16h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         <p>No messages yet</p><small>Sent messages will appear here</small></div>`;
+      this.renderAccountability();
       return;
     }
 
@@ -2222,6 +2419,52 @@ const logsPage = {
         </div>
       </div>`;
     }).join('');
+    this.renderAccountability();
+  },
+
+  setAccountabilityFilter(filter) {
+    this.accountabilityFilter = filter;
+    this.renderAccountability();
+  },
+
+  async renderAccountability() {
+    const grid = document.getElementById('accountability-grid');
+    const list = document.getElementById('accountability-list');
+    if (!grid || !list) return;
+    try {
+      const a = await window.api.messages.accountability();
+      this.accountabilityData = a;
+      const defs = [
+        { key:'all',       label:'All attempts',      count:a.all,       cls:'teal'  },
+        { key:'sent',      label:'Sent / accepted',   count:a.sent,      cls:'teal'  },
+        { key:'failed',    label:'Failed',            count:a.failed,    cls:'red'   },
+        { key:'delivered', label:'Delivered',         count:a.delivered, cls:'green' },
+      ];
+      grid.innerHTML = defs.map(d => `
+        <button class="accountability-box ${d.cls} ${this.accountabilityFilter === d.key ? 'active' : ''}" onclick="logsPage.setAccountabilityFilter('${d.key}')">
+          <div class="accountability-count">${d.count}</div>
+          <div class="accountability-label">${d.label}</div>
+        </button>`).join('');
+
+      const key = this.accountabilityFilter;
+      const rows = key === 'failed' ? a.failedLogs : key === 'delivered' ? a.deliveredLogs : key === 'all' ? a.allLogs : a.sentLogs;
+      list.innerHTML = rows.length ? rows.slice(0, 100).map(l => `
+        <div class="accountability-row">
+          <div class="log-dot ${l.status === 'delivered' ? 'sent' : l.status === 'sent' ? 'sent' : l.status === 'failed' ? 'failed' : 'pending'}"></div>
+          <div style="flex:1;min-width:0">
+            <div class="accountability-name">${escHtml(l.contact_name || l.phone)} ${l.is_flash ? '<span class="badge badge-amber" style="font-size:9px">⚡ Flash</span>' : ''}</div>
+            <div class="accountability-phone">${escHtml(l.phone)} · ${escHtml((l.body || '').substring(0, 55))}${(l.body || '').length > 55 ? '…' : ''}</div>
+            ${l.error_text ? `<div class="accountability-error">${escHtml(l.error_text)}</div>` : ''}
+          </div>
+          <div style="text-align:right;flex-shrink:0">
+            <span class="badge ${l.status === 'delivered' ? 'badge-green' : l.status === 'sent' ? 'badge-teal' : l.status === 'failed' ? 'badge-red' : 'badge-amber'}">${l.status === 'delivered' ? 'delivered' : l.status}</span>
+            ${l.parts_total > 1 ? `<div class="accountability-phone">part ${l.parts_sent || 0}/${l.parts_total}</div>` : ''}
+            <div class="accountability-phone">${formatDate(l.delivered_at || l.sent_at || l.created_at)}</div>
+          </div>
+        </div>`).join('') : `<div style="text-align:center;color:var(--text-3);padding:20px">No ${key === 'sent' ? 'sent' : key} messages yet</div>`;
+    } catch(e) {
+      list.innerHTML = `<div style="text-align:center;color:var(--red-text);padding:18px">Could not load accountability: ${escHtml(e.message || String(e))}</div>`;
+    }
   },
 
   async viewDelivery(messageId) {
@@ -2229,10 +2472,11 @@ const logsPage = {
     const { msg, logs, byStatus, deliveryRate } = r;
     if (!msg) return;
 
-    const sent    = byStatus.sent    || 0;
-    const failed  = byStatus.failed  || 0;
-    const pending = byStatus.pending || 0;
-    const total   = msg.total_recipients || logs.length;
+    const sent     = byStatus.sent     || 0;
+    const delivered = byStatus.delivered || 0;
+    const failed   = byStatus.failed   || 0;
+    const pending  = byStatus.pending  || 0;
+    const total    = msg.total_recipients || logs.length;
 
     // Big ring
     const radius = 32, circ = 2 * Math.PI * radius;
@@ -2243,6 +2487,7 @@ const logsPage = {
 
     // Group logs by status for sorted display
     const sentLogs    = logs.filter(l=>l.status==='sent');
+    const deliveredLogs = logs.filter(l=>l.status==='delivered');
     const failedLogs  = logs.filter(l=>l.status==='failed');
     const pendingLogs = logs.filter(l=>l.status==='pending');
 
@@ -2267,10 +2512,14 @@ const logsPage = {
         </div>
         <div style="flex:1">
           <div style="font-size:12px;color:var(--text-2);margin-bottom:8px;font-weight:500">${msg.is_flash ? '<span class="badge badge-amber" style="margin-right:6px">⚡ Flash</span>' : ''}${escHtml(msg.body.substring(0,80))}${msg.body.length>80?'…':''}</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px">
             <div style="text-align:center;padding:8px;background:#fff;border-radius:var(--radius);border:1px solid var(--teal-light)">
               <div style="font-size:18px;font-weight:800;color:var(--teal)">${sent}</div>
               <div style="font-size:10px;color:var(--text-3);font-weight:600">SENT</div>
+            </div>
+            <div style="text-align:center;padding:8px;background:#fff;border-radius:var(--radius);border:1px solid #C8E6C9">
+              <div style="font-size:18px;font-weight:800;color:var(--green)">${delivered}</div>
+              <div style="font-size:10px;color:var(--text-3);font-weight:600">DELIVERED</div>
             </div>
             <div style="text-align:center;padding:8px;background:#fff;border-radius:var(--radius);border:1px solid #FFCDD2">
               <div style="font-size:18px;font-weight:800;color:var(--red)">${failed}</div>
@@ -2286,17 +2535,17 @@ const logsPage = {
 
       <!-- Per-recipient list -->
       <div style="max-height:300px;overflow-y:auto;border:1.5px solid var(--border);border-radius:var(--radius-lg)">
-        ${[...failedLogs, ...pendingLogs, ...sentLogs].map(l => `
+        ${[...failedLogs, ...pendingLogs, ...deliveredLogs, ...sentLogs].map(l => `
           <div style="display:flex;align-items:center;gap:10px;padding:9px 14px;border-bottom:1px solid var(--border);font-size:13px">
-            <div class="log-dot ${l.status==='sent'?'sent':l.status==='failed'?'failed':'pending'}" style="flex-shrink:0"></div>
+            <div class="log-dot ${l.status==='sent'||l.status==='delivered'?'sent':l.status==='failed'?'failed':'pending'}" style="flex-shrink:0"></div>
             <div style="flex:1;min-width:0">
               <div style="font-weight:600;color:var(--text)">${escHtml(l.contact_name || l.phone)}</div>
               <div style="font-size:11px;color:var(--text-3);font-family:var(--mono)">${escHtml(l.phone)}</div>
               ${l.error_text?`<div style="font-size:11px;color:var(--red-text);margin-top:2px">${escHtml(l.error_text)}</div>`:''}
             </div>
             <div style="text-align:right;flex-shrink:0">
-              <span class="badge ${l.status==='sent'?'badge-teal':l.status==='failed'?'badge-red':'badge-amber'}">${l.status}</span>
-              <div style="font-size:10px;color:var(--text-3);margin-top:3px">${formatDate(l.sent_at)}</div>
+              <span class="badge ${l.status==='delivered'?'badge-green':l.status==='sent'?'badge-teal':l.status==='failed'?'badge-red':'badge-amber'}">${l.status}</span>
+              <div style="font-size:10px;color:var(--text-3);margin-top:3px">${formatDate(l.delivered_at || l.sent_at)}</div>
             </div>
           </div>`).join('')}
       </div>
@@ -2709,6 +2958,14 @@ const settingsPage = {
               </select>
               <div style="font-size:11px;color:var(--text-3);margin-top:3px">Change only if flash SMS is not shown</div>
             </div>
+            <div class="form-group">
+              <label class="form-label">Long SMS by default</label>
+              <label style="display:flex;align-items:center;gap:7px;cursor:pointer;font-weight:400;min-height:38px">
+                <input type="checkbox" id="s-longsms" ${this.settings.default_long_sms !== '0' ? 'checked' : ''}>
+                Split messages over 160 characters into SMS parts
+              </label>
+              <div style="font-size:11px;color:var(--text-3);margin-top:3px">Can be changed per message on Compose</div>
+            </div>
           </div>
         </div>
 
@@ -2738,6 +2995,28 @@ const settingsPage = {
                 <option value="3" ${this.settings.max_sms_parts === '3' ? 'selected':''}>3 (459 chars)</option>
               </select>
             </div>
+          </div>
+        </div>
+
+        <!-- USSD bundle codes -->
+        <div class="settings-section">
+          <div class="settings-section-title">USSD bundle codes</div>
+          <p style="font-size:13px;color:var(--text-2);margin-bottom:12px">
+            Saved shortcuts for buying or checking SMS bundles with the SIM in your modem or Android phone.
+            Codes are editable — confirm the current codes with your network.
+          </p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            ${DialPad.savedCodes().map(c => `
+              <div class="form-group" style="border:1px solid var(--border);border-radius:var(--radius);padding:12px">
+                <label class="form-label">${escHtml(c.network)} — ${escHtml(c.label)}</label>
+                <div style="display:flex;gap:6px">
+                  <input class="form-input" id="s-ussd-${escHtml(c.id)}-label" value="${escHtml(c.label)}" placeholder="Button label" maxlength="40">
+                  <input class="form-input" id="s-ussd-${escHtml(c.id)}-code" value="${escHtml(c.code)}" placeholder="*100#" maxlength="32" style="max-width:130px">
+                </div>
+              </div>`).join('')}
+          </div>
+          <div style="font-size:11px;color:var(--text-3);margin-top:8px">
+            Defaults use Uganda MTN/Airtel codes. Only digits, * and # are accepted.
           </div>
         </div>
 
@@ -2801,7 +3080,7 @@ const settingsPage = {
         <div class="settings-section">
           <div class="settings-section-title">About</div>
           <table style="font-size:13px;border-collapse:collapse">
-            <tr><td style="color:var(--text-2);padding:4px 16px 4px 0">Version</td><td style="font-weight:500">${escHtml(appInfo.version || '2.1.0')}</td></tr>
+            <tr><td style="color:var(--text-2);padding:4px 16px 4px 0">Version</td><td style="font-weight:500">${escHtml(appInfo.version || '2.2.0')}</td></tr>
             <tr><td style="color:var(--text-2);padding:4px 16px 4px 0">Platform</td><td>${escHtml(appInfo.platform || '')} / ${escHtml(appInfo.arch || '')}</td></tr>
             <tr><td style="color:var(--text-2);padding:4px 16px 4px 0">Node.js</td><td style="font-family:var(--mono);font-size:12px">${escHtml(appInfo.nodeVersion || '')}</td></tr>
             <tr><td style="color:var(--text-2);padding:4px 16px 4px 0">Electron</td><td style="font-family:var(--mono);font-size:12px">${escHtml(appInfo.electronVersion || '')}</td></tr>
@@ -2919,6 +3198,15 @@ const settingsPage = {
   },
 
   async save() {
+    const ussdCodes = DialPad.savedCodes().map(c => ({
+      id:      c.id,
+      network: c.network,
+      label:   document.getElementById(`s-ussd-${c.id}-label`)?.value.trim() || c.label,
+      code:    document.getElementById(`s-ussd-${c.id}-code`)?.value.trim()  || c.code,
+    }));
+    const badCode = ussdCodes.find(c => !/^[0-9*#]{1,32}$/.test(c.code));
+    if (badCode) { toast(`Invalid USSD code for ${badCode.label}. Use only digits, * and #.`, 'error'); return; }
+
     const updates = {
       com_port:             document.getElementById('s-port')?.value.trim()    || 'COM3',
       baud_rate:            document.getElementById('s-baud')?.value            || '115200',
@@ -2929,7 +3217,9 @@ const settingsPage = {
       max_sms_parts:        document.getElementById('s-parts')?.value           || '3',
       sms_mode:             document.getElementById('s-smsmode')?.value         || 'text',
       default_sms_type:     document.getElementById('s-msgtype')?.value         || 'normal',
+      default_long_sms:     document.getElementById('s-longsms')?.checked ? '1' : '0',
       flash_dcs:            document.getElementById('s-flashdcs')?.value        || '240',
+      ussd_codes:           JSON.stringify(ussdCodes),
       notify_on_receive:    document.getElementById('s-notify-receive')?.checked ? '1' : '0',
       notify_on_fail:       document.getElementById('s-notify-fail')?.checked   ? '1' : '0',
     };
@@ -3086,10 +3376,201 @@ devicesPage.readSIMContacts = async function() {
     });
 };
 
+// ── Page: dial pad (USSD bundles) ─────────────────────────────
+function validUssd(code) {
+  return /^[0-9*#]{1,32}$/.test(String(code || '').trim());
+}
+function jsArg(value) {
+  // Safe inside a single-quoted inline onclick attribute.
+  return escHtml(String(value || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'"));
+}
+
+const DialPad = {
+  savedCodes() {
+    try {
+      const raw = Settings.get('ussd_codes');
+      const parsed = typeof raw === 'string' ? JSON.parse(raw) : raw;
+      if (Array.isArray(parsed) && parsed.length) {
+        return parsed.filter(c => c && typeof c === 'object').map((c, i) => ({
+          id:      String(c.id || `custom-${i}`),
+          network: String(c.network || 'Saved'),
+          label:   String(c.label || `Code ${i + 1}`),
+          code:    String(c.code || ''),
+        }));
+      }
+    } catch(e) {}
+    return DEFAULT_USSD_CODES.map(c => ({ ...c }));
+  },
+
+  async render() {
+    let devices = [];
+    try { devices = await window.api.devices.listAll() || []; } catch(e) {}
+    const options = devices.length
+      ? devices.map(d => {
+          const value = d.type === 'modem' ? 'modem' : `android:${d.id}`;
+          const label = d.type === 'modem'
+            ? `GSM modem (${d.port || Modem.portInfo || 'connected'})`
+            : (d.label || d.model || 'Android phone');
+          return `<option value="${escHtml(value)}">${escHtml(label)}</option>`;
+        }).join('')
+      : `<option value="">No device connected</option>`;
+
+    const cards = this.savedCodes().map(c => {
+      const tone = String(c.network).toLowerCase().includes('mtn') ? 'mtn' : 'airtel';
+      return `
+        <button class="saved-code-card ${tone}" onclick="DialPad.useCode('${jsArg(c.code)}')" title="Dial ${escHtml(c.code)}">
+          <div class="saved-code-top">
+            <span class="saved-code-network">${escHtml(c.network)}</span>
+            <span class="saved-code-code">${escHtml(c.code)}</span>
+          </div>
+          <div class="saved-code-label">${escHtml(c.label)}</div>
+        </button>`;
+    }).join('');
+
+    document.getElementById('page-dialpad').innerHTML = `
+      <div class="page-header">
+        <div class="page-title">Dial Pad</div>
+        <div class="header-actions">
+          <button class="btn btn-sm" onclick="DialPad.render()">Refresh devices</button>
+          <button class="btn btn-sm" onclick="pagesRouter.load('settings')">Edit saved codes</button>
+        </div>
+      </div>
+      <div class="page-body">
+        <p style="font-size:13px;color:var(--text-2);margin-bottom:16px">
+          Buy or check SMS bundles with the SIM in your modem or Android phone.
+        </p>
+        ${devices.length ? '' : `
+          <div class="validation-banner warning">
+            <span class="validation-icon">⚠</span>
+            <div>
+              <div class="validation-title">No sending device found</div>
+              <div class="validation-body">Connect a GSM modem on the Devices page, or connect an Android phone with USB Debugging enabled.</div>
+            </div>
+            <button class="btn btn-sm" style="margin-left:auto" onclick="pagesRouter.load('devices')">Go to Devices</button>
+          </div>`}
+
+        <div class="dial-layout">
+          <div class="dial-pad-card">
+            <label class="form-label">Send via</label>
+            <select class="form-input" id="dial-device" style="margin-bottom:14px">${options}</select>
+            <div class="dial-display" id="dial-display">Enter a USSD code</div>
+            <div class="dial-keys">
+              ${['1','2','3','4','5','6','7','8','9','*','0','#'].map(k =>
+                `<button class="dial-key" onclick="DialPad.press('${k}')">${k}</button>`).join('')}
+              <button class="dial-key dial-key-utility" onclick="DialPad.press('back')">←</button>
+              <button class="dial-key dial-key-utility" onclick="DialPad.press('clear')">C</button>
+              <button class="dial-key dial-key-dial" onclick="DialPad.confirm()">DIAL</button>
+            </div>
+            <input class="form-input" id="dial-code" placeholder="*100#" maxlength="32"
+                   style="margin-top:14px;text-align:center;font-family:var(--mono);font-size:16px;letter-spacing:.08em"
+                   oninput="DialPad.updateDisplay()"
+                   onkeydown="if(event.key==='Enter'){event.preventDefault();DialPad.confirm()}">
+            <div style="font-size:11px;color:var(--text-3);margin-top:8px;line-height:1.5">
+              GSM modem shows the network reply here. Android opens the phone dialer with the code ready — press call on the phone.
+            </div>
+          </div>
+
+          <div>
+            <div class="settings-section-title">Saved bundle codes</div>
+            <div class="saved-code-grid">${cards}</div>
+            <div class="dial-response" id="dial-response" style="display:none"></div>
+          </div>
+        </div>
+      </div>`;
+    this.updateDisplay();
+  },
+
+  updateDisplay() {
+    const input = document.getElementById('dial-code');
+    const display = document.getElementById('dial-display');
+    if (input && display) display.textContent = input.value || 'Enter a USSD code';
+  },
+
+  press(key) {
+    const input = document.getElementById('dial-code');
+    if (!input) return;
+    if (key === 'back') input.value = input.value.slice(0, -1);
+    else if (key === 'clear') input.value = '';
+    else if (/^[0-9*#]$/.test(key)) input.value += key;
+    this.updateDisplay();
+    input.focus();
+  },
+
+  useCode(code) {
+    const input = document.getElementById('dial-code');
+    if (!input) return;
+    input.value = code;
+    this.updateDisplay();
+    this.confirm();
+  },
+
+  deviceLabel(value) {
+    if (value === 'modem') return `GSM modem (${Modem.portInfo || 'connected'})`;
+    const option = Array.from(document.querySelectorAll('#dial-device option')).find(o => o.value === value);
+    return option ? option.textContent : 'Android phone';
+  },
+
+  confirm() {
+    const input = document.getElementById('dial-code');
+    const code = (input?.value || '').trim();
+    if (!validUssd(code)) { toast('Enter a valid USSD code — digits, * and # only', 'error'); input?.focus(); return; }
+    const device = document.getElementById('dial-device')?.value;
+    if (!device) { toast('Connect a GSM modem or Android phone first', 'error'); return; }
+    const match = this.savedCodes().find(c => c.code === code);
+    showModal(`
+      <div class="modal-title">Confirm USSD dial</div>
+      <p style="font-size:14px;color:var(--text)">
+        Dial <strong style="font-family:var(--mono);color:var(--teal-dark)">${escHtml(code)}</strong>
+        using <strong>${escHtml(this.deviceLabel(device))}</strong>?
+      </p>
+      ${match ? `<p style="font-size:13px;color:var(--text-2);margin-bottom:8px">${escHtml(match.network)} — ${escHtml(match.label)}</p>` : ''}
+      <p style="font-size:12px;color:var(--text-2);line-height:1.6">
+        Network charges may apply. For Android, the dialer opens and you must press the call button on the phone.
+      </p>
+      <div class="modal-footer">
+        <button class="btn btn-sm" data-cancel>Cancel</button>
+        <button class="btn btn-primary btn-sm" data-confirm>Dial now</button>
+      </div>`, () => this.dial(code, device));
+  },
+
+  async dial(code, device) {
+    const out = document.getElementById('dial-response');
+    if (!out) return;
+    out.style.display = 'block';
+    out.className = 'dial-response pending';
+    out.innerHTML = `<div class="dial-response-title">Dialing ${escHtml(code)}…</div>
+                     <div class="dial-response-meta">${escHtml(this.deviceLabel(device))}</div>`;
+    try {
+      if (device === 'modem') {
+        if (!Modem.connected) throw new Error('GSM modem is not connected');
+        const r = await window.api.modem.ussd(code);
+        if (!r || !r.success) throw new Error((r && r.error) || 'Modem USSD request failed');
+        out.className = 'dial-response success';
+        out.innerHTML = `<div class="dial-response-title">USSD response</div>
+                         <pre>${escHtml(r.message || r.raw || '')}</pre>
+                         <div class="dial-response-meta">GSM modem · ${escHtml(code)}</div>`;
+      } else {
+        const deviceId = device.startsWith('android:') ? device.slice(8) : '';
+        if (!deviceId) throw new Error('Android device not selected');
+        const r = await window.api.android.openDialer({ deviceId, code });
+        if (!r || !r.success) throw new Error((r && r.error) || 'Could not open Android dialer');
+        out.className = 'dial-response info';
+        out.innerHTML = `<div class="dial-response-title">Dialer opened on Android</div>
+                         <p>Press the green call button on the phone to send <strong>${escHtml(code)}</strong>.</p>
+                         <div class="dial-response-meta">${escHtml(this.deviceLabel(device))}</div>`;
+      }
+    } catch(e) {
+      out.className = 'dial-response error';
+      out.innerHTML = `<div class="dial-response-title">Could not dial</div>
+                       <p>${escHtml(e.message || String(e))}</p>`;
+    }
+  }
+};
+
 // ── App Router ────────────────────────────────────────────────
 const pagesRouter = {
   current: 'dashboard',
-  pageMap: { dashboard:dashboardPage, compose:composePage, inbox:inboxPage, templates:templatesPage, contacts:contactsPage, groups:groupsPage, logs:logsPage, scheduled:scheduledPage, devices:devicesPage, settings:settingsPage },
+  pageMap: { dashboard:dashboardPage, compose:composePage, inbox:inboxPage, templates:templatesPage, contacts:contactsPage, groups:groupsPage, logs:logsPage, scheduled:scheduledPage, devices:devicesPage, dialpad:DialPad, settings:settingsPage },
   load(page) {
     document.querySelectorAll('.page').forEach(p => p.style.display = 'none');
     document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
@@ -3127,15 +3608,27 @@ const pagesRouter = {
     for (const t of defaults) await DB.add('templates', { ...t, use_count: 0, created_at: new Date().toISOString() });
   }
 
-  // Nav clicks
+  // Nav clicks (plus keyboard activation for accessibility clients)
   document.querySelectorAll('.nav-item[data-page]').forEach(item => {
     item.addEventListener('click', () => pagesRouter.load(item.dataset.page));
+    item.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        pagesRouter.load(item.dataset.page);
+      }
+    });
   });
 
   modem.init();
 
   // Inbox badge
   window.api.inbox.onNew(() => window.api.inbox.unreadCount().then(c => setNavBadge('inbox', c)));
+
+  // Network delivery reports (+CDS) update accountability counts in real time
+  window.api.messages.onDeliveryReport(() => {
+    if (document.getElementById('page-logs')?.style.display !== 'none' && logsPage) logsPage.load();
+    if (document.getElementById('page-dashboard')?.style.display !== 'none' && dashboardPage) dashboardPage.load();
+  });
 
   // Load badge counts
   const [msgs, unread] = await Promise.all([

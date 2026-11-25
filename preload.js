@@ -15,6 +15,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
     readSMS: (args) => invoke('android:read-sms', args),
     importContacts: (args) => invoke('android:import-contacts', args),
     importSMS: (args) => invoke('android:import-sms', args),
+    openDialer: (args) => invoke('android:open-dialer', args),
   },
   devices: {
     listAll: () => invoke('devices:list-all'),

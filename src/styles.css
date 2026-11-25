@@ -994,3 +994,189 @@ select.form-control { cursor: pointer; }
 
 .serial-banner { background: var(--teal-pale); border: 1.5px solid var(--teal-light); border-radius: var(--radius-lg); padding: 14px 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; font-size: 13px; }
 .serial-banner a { color: var(--teal); cursor: pointer; font-weight: 600; }
+
+/* ══════════════════════════════════════════════════════════
+   DIAL PAD / USSD BUNDLES
+   ══════════════════════════════════════════════════════════ */
+.dial-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+.dial-pad-card {
+  background: var(--bg-panel);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+}
+.dial-display {
+  min-height: 52px;
+  background: var(--teal-pale);
+  border: 1.5px solid var(--teal-light);
+  border-radius: var(--radius);
+  color: var(--teal-dark);
+  font-family: var(--mono);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  word-break: break-all;
+  text-align: center;
+}
+.dial-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+.dial-key {
+  height: 56px;
+  border: 1.5px solid var(--border-2);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .12s;
+}
+.dial-key:hover { border-color: var(--teal); background: var(--teal-pale); color: var(--teal-dark); }
+.dial-key:active { transform: translateY(1px); }
+.dial-key-utility { font-size: 16px; color: var(--text-2); background: var(--bg-hover); }
+.dial-key-dial {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .06em;
+}
+.dial-key-dial:hover { background: var(--teal-dark); border-color: var(--teal-dark); color: #fff; }
+
+.saved-code-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.saved-code-card {
+  text-align: left;
+  background: var(--bg-panel);
+  border: 1.5px solid var(--border);
+  border-left-width: 4px;
+  border-radius: var(--radius);
+  padding: 13px 14px;
+  cursor: pointer;
+  transition: all .12s;
+}
+.saved-code-card.mtn    { border-left-color: var(--amber); }
+.saved-code-card.airtel { border-left-color: var(--red); }
+.saved-code-card:hover { border-color: var(--teal); background: var(--teal-pale); transform: translateY(-1px); }
+.saved-code-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.saved-code-network {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--teal);
+}
+.saved-code-code { font-family: var(--mono); font-size: 12px; color: var(--text-2); }
+.saved-code-label { font-size: 13px; font-weight: 600; color: var(--text); margin-top: 7px; }
+
+.dial-response {
+  margin-top: 16px;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid;
+  padding: 14px 16px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.dial-response.pending { background: var(--teal-pale); border-color: var(--teal-light); color: var(--teal-dark); }
+.dial-response.success { background: var(--green-bg); border-color: #C8E6C9; color: var(--green-text); }
+.dial-response.info    { background: var(--blue-bg); border-color: #BBDEFB; color: var(--blue-text); }
+.dial-response.error   { background: var(--red-bg); border-color: #FFCDD2; color: var(--red-text); }
+.dial-response-title { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+.dial-response p { margin: 4px 0; }
+.dial-response pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--mono);
+  font-size: 12px;
+  background: rgba(255,255,255,.7);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  margin: 8px 0;
+}
+.dial-response-meta { font-size: 11px; opacity: .8; margin-top: 8px; }
+
+@media (max-width: 900px) {
+  .dial-layout { grid-template-columns: 1fr; }
+  .saved-code-grid { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   COMPOSE OPTIONS + ACCOUNTABILITY
+   ══════════════════════════════════════════════════════════ */
+.message-options { display: flex; gap: 10px; flex-wrap: wrap; }
+.message-option {
+  flex: 1 1 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 12px;
+  background: var(--bg-panel);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all .12s;
+}
+.message-option:hover { border-color: var(--teal-light); background: var(--teal-pale); }
+.message-option input { margin: 0 6px 0 0; accent-color: var(--teal); vertical-align: middle; }
+.message-option span { font-size: 13px; font-weight: 600; color: var(--text); }
+.message-option small { font-size: 10px; color: var(--text-3); line-height: 1.4; padding-left: 24px; }
+.message-option.flash { border-left: 4px solid var(--amber); }
+
+.accountability-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.accountability-box {
+  text-align: left;
+  background: var(--bg-panel);
+  border: 1.5px solid var(--border);
+  border-top-width: 3px;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all .12s;
+}
+.accountability-box:hover { border-color: var(--teal); background: var(--teal-pale); }
+.accountability-box.teal   { border-top-color: var(--teal); }
+.accountability-box.red    { border-top-color: var(--red); }
+.accountability-box.green  { border-top-color: var(--green); }
+.accountability-box.active { background: var(--teal-pale); border-color: var(--teal); box-shadow: 0 0 0 2px var(--teal-light); }
+.accountability-count { font-size: 22px; font-weight: 800; color: var(--teal-dark); line-height: 1; }
+.accountability-box.red .accountability-count   { color: var(--red-text); }
+.accountability-box.green .accountability-count { color: var(--green-text); }
+.accountability-label { font-size: 11px; color: var(--text-3); font-weight: 600; margin-top: 5px; }
+
+.accountability-list {
+  margin-top: 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  max-height: 320px;
+  overflow-y: auto;
+}
+.accountability-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.accountability-row:last-child { border-bottom: none; }
+.accountability-name { font-size: 13px; font-weight: 600; color: var(--text); }
+.accountability-phone { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+.accountability-error { font-size: 11px; color: var(--red-text); margin-top: 3px; }
+
+@media (max-width: 900px) {
+  .accountability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
